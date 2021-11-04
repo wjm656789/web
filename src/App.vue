@@ -1,8 +1,11 @@
 <template>
   <div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>
+      <!--      get传值，利用this.$route.query接收-->
+      <!--      <router-link to="/about?id=2&level=5">About</router-link>-->
+      <!--      params传参-->
+      <router-link :to="{name:'About',params:{id:123}}">About</router-link>
     </div>
     <router-view />
   </div>

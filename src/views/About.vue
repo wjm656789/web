@@ -13,17 +13,18 @@ export default {
     }
   },
   mounted() {
+    console.log('weiweiwei', this.$route.params.id)
     this.time = setInterval(() => {
       this.$refs.button.$el.click()
     }, 2000)
   },
   beforeUnmount() {
-    console.log('xxxx')
+    // console.log('xxxx')
     clearInterval(this.time)
   },
   methods: {
     btnClick() {
-      console.log('weiweiwei')
+      // console.log('weiweiwei')
     }
   }
 }

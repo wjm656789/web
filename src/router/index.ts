@@ -1,8 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import test1 from '../views/test1.vue'
 import test2 from '../views/test2.vue'
 import test3 from '../views/test3.vue'
+import test4 from '../views/test4.vue'
+import test5 from '../views/test4.vue'
 
 const routes = [
   // {
@@ -12,12 +14,14 @@ const routes = [
   // },
   {
     path: '/',
-    name: 'test3',
-    component: test3
+    name: 'test5',
+    component: test5
   },
   {
-    path: '/about',
+    path: '/about/:id',
     name: 'About',
+    // redirect: '/',
+    // alias: '/wei',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -26,8 +30,13 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
+
+// router.beforeEach((to, from, next) => {
+//   console.log('xxxxx')
+//   next()
+// })
 
 export default router
