@@ -12,9 +12,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive, provide } from 'vue'
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  setup() {
+
+  }
 })
 </script>
 

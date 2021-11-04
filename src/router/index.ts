@@ -4,7 +4,8 @@ import test1 from '../views/test1.vue'
 import test2 from '../views/test2.vue'
 import test3 from '../views/test3.vue'
 import test4 from '../views/test4.vue'
-import test5 from '../views/test4.vue'
+import test5 from '../views/test5.vue'
+import test6 from '../views/test6.vue'
 
 const routes = [
   // {
