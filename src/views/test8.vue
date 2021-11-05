@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div ref="aaa">963852</div>
+     <div ref="aaa">963852</div>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { defineComponent, ref, onMounted } from 'vue'
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'Test8',
   props: {
     msg: String
   },
