@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { defineComponent, reactive, onBeforeMount, onMounted, onBeforeUpdate, onBeforeUnmount, onUnmounted, provide } from 'vue'
+import { defineComponent, reactive, onBeforeMount, onMounted, onUpdated, onBeforeUpdate, onBeforeUnmount, onUnmounted, provide } from 'vue'
 import test6 from './test6.vue'
 export default defineComponent({
   name: 'Test5',
@@ -20,6 +20,9 @@ export default defineComponent({
     onMounted(() => {
       console.log('onMounted')
     })
+    // onUpdated(() => {
+    //   console.log('onUpdated')
+    // })
     const student = reactive({
       name: '小红',
       classname: '三年5班'

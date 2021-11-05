@@ -6,6 +6,8 @@ import test3 from '../views/test3.vue'
 import test4 from '../views/test4.vue'
 import test5 from '../views/test5.vue'
 import test6 from '../views/test6.vue'
+import test7 from '../views/test7.vue'
+import test8 from '../views/test8.vue'
 
 const routes = [
   // {
@@ -15,8 +17,8 @@ const routes = [
   // },
   {
     path: '/',
-    name: 'test5',
-    component: test5
+    name: 'test8',
+    component: test8
   },
   {
     path: '/about/:id',
